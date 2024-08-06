@@ -21,7 +21,7 @@ export default function Home() {
     {
       name: '十点',
       position: 'Loyal User',
-      description: '毛豆框架深度用户 羊毛届大佬 擅长京豆等0撸活动',
+      description: '毛豆框架深度用户 羊毛领域大佬 擅长京豆等0撸活动',
       frontImage: '/members/ten.jpg',
       backImage: '/members/shidian_auth.jpg',
     },
@@ -31,6 +31,34 @@ export default function Home() {
       description: '略懂网络 刚入门Python',
       frontImage: '/members/huazinet.jpg',
       backImage: '/members/huazi_auth.jpg',
+    },
+    {
+      name: '小猪',
+      position: 'Loyal User',
+      description: '专注IT硬件',
+      frontImage: '/members/xiaozhu.jpg',
+      backImage: '/members/xiaozhu_auth.jpg',
+    },
+    {
+      name: '可爱',
+      position: '自动化羊毛领域专家 奶茶供应商',
+      description: '略懂网络 刚入门Python',
+      frontImage: '/members/keai.jpg',
+      backImage: '/members/keai_auth.jpg',
+    },
+    {
+      name: '晚安',
+      position: '羊毛领域大佬 奶茶供应商',
+      description: '略懂网络 刚入门Python',
+      frontImage: '/members/wanan.jpg',
+      backImage: '/members/wanan_auth.jpg',
+    },
+    {
+      name: 'X',
+      position: '羊毛领域大佬 擅长京豆等0撸活动',
+      description: '略懂网络 刚入门Python',
+      frontImage: '/members/X.jpg',
+      backImage: '/members/X_auth.jpg',
     },
   ];
 
