@@ -1,0 +1,165 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #ffe9fb, #e4fef6);
+  padding-top: 20px;
+  padding-bottom: 50px; /* 为底部留出空间 */
+}
+
+.logoContainer {
+  position: relative;
+  margin: 0 auto; /* 将 Logo 居中对齐 */
+  margin-top: 20px; /* 调整顶部间距 */
+}
+
+.logoContainer svg {
+  width: 150px; /* 调整 Logo 的宽度 */
+  height: 150px; /* 调整 Logo 的高度 */
+}
+
+.teamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.member {
+  width: calc(100% / 4 - 20px);
+  max-width: 300px; /* 增加最大宽度 */
+  height: 420px; /* 增加卡片高度 */
+  position: relative;
+  perspective: 1000px;
+}
+
+.cardFace {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  transition: transform 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; /* 均匀分布内容 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.cardFront {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cardBack {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: rotateY(180deg);
+}
+
+.flipped .cardFront {
+  transform: rotateY(180deg);
+}
+
+.flipped .cardBack {
+  transform: rotateY(0deg);
+}
+
+.memberImage {
+  border-radius: 50%;
+  max-width: 120px; /* 设置头像最大宽度 */
+  max-height: 120px; /* 设置头像最大高度 */
+  margin-top: 20px;
+}
+
+.memberName {
+  font-size: 1.5em;
+}
+
+.memberPosition {
+  font-size: 1.3em; /* 增大职位字体 */
+  background: linear-gradient(90deg, #FFD700, #FF8C00, #FFD700);
+  background-size: 200% 200%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientAnimation 0.4s infinite linear;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.memberDescription {
+  padding: 0 20px;
+  text-align: center;
+  color: #333;
+  min-height: 60px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #004d40;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #00796b;
+}
+
+@media (max-width: 1200px) {
+  .member {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .member {
+    width: calc(100% / 2 - 20px);
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .member {
+    width: calc(100% - 20px);
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}
+
+.copyright {
+  margin-top: auto;
+  padding: 20px 0;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}

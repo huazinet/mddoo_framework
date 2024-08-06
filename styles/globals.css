@@ -1,0 +1,24 @@
+/* globals.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 禁止水平滚动 */
+  font-family: Arial, sans-serif;
+  height: 100%; /* 设置高度为100% */
+  -webkit-user-select: none; /* 禁用Safari和Chrome上的文本选择 */
+  -moz-user-select: none; /* 禁用Firefox上的文本选择 */
+  -ms-user-select: none; /* 禁用IE上的文本选择 */
+  user-select: none; /* 禁用所有浏览器上的文本选择 */
+  -webkit-touch-callout: none; /* 禁用iOS上的长按菜单 */
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+img {
+  pointer-events: none; /* 禁用图片上的所有鼠标事件 */
+}
