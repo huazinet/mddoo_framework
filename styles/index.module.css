@@ -118,6 +118,7 @@
   font-size: 1.2rem;
   margin-bottom: 30px;
   color: #00796b;
+  text-align: center; /* 使文本居中 */
 }
 
 @media (max-width: 1200px) {
@@ -138,6 +139,7 @@
   .description {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    text-align: center; /* 使文本居中 */
   }
 }
 
@@ -153,6 +155,7 @@
   .description {
     font-size: 1rem;
     margin-bottom: 20px;
+    text-align: center; /* 使文本居中 */
   }
 }
 
